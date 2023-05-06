@@ -7,10 +7,8 @@ std::string to_camel_case(std::string texter) {
     for (int i = 0; i < text.length(); i++) {
         if (text[i] == '-' || text[i] == '_') {
             text.erase(i, 1);
-            if (islower(text[i])) {
-                ///text[i] -= 32;
+            if (islower(text[i])){
                text[i] = toupper(text[i]);
-                    //std::cout << "TRUE";
             }
         }
     }
