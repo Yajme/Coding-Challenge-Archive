@@ -18,18 +18,14 @@ class SumFct
             num.push_back(num.at(i) + num.at(i-1));
         }
     }
-     for(int i = 0;i<num.size();i++){
-        //perimeter += num.at(i);
-    }
-    perimeter *=4;
-    return perimeter;
+    return perimeter*4;
   };
 };
 
 int main(){
 
     SumFct f;
-    ull s = f.perimeter(5);
+    ull s = f.perimeter(7);
 
     std::cout << std::endl;
     std::cout << s;
