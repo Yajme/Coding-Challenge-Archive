@@ -1,0 +1,11 @@
+#include<string>
+#include<cmath>
+
+long zeros(long n) {
+    if (n == 0) return n;
+    long count = 0;
+    for (int i = 5; n / i > 0; i *= 5) {
+        count += n / i;
+    }
+    return count;
+}
