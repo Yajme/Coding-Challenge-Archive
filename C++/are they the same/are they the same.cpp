@@ -1,3 +1,10 @@
+#include <iostream>
+#include<cmath>
+#include <vector>
+#include <algorithm>
+#include <iterator>
+
+
 class Same {
 public:
     static bool comp(std::vector<int>& a, std::vector<int>& b) {
